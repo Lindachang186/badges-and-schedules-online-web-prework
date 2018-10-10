@@ -29,7 +29,7 @@ welcome = batch_badge_creator(attendees).size
 i = 0
 while i < one
   welcome.each do |attendees|
-    puts one[i]
+    puts welcome[i]
     i += 1
 end
 end
