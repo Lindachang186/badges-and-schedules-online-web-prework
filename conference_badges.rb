@@ -25,7 +25,7 @@ end
 end
 
 def printer(attendees)
-one = batch_badge_creator(attendees)
+one = batch_badge_creator(attendees).size
 i = 0
   one.each do |i|
     puts one[i]
