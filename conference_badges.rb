@@ -15,10 +15,10 @@ def assign_rooms(attendees)
   room_assignments = []
   i = attendees.size
   n = 0
-  if n > i
-    i += 1
+  if n < i
+    n += 1
   attendees.each do |name|
-    puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{i}!")
+    puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
   end
   return room_assignments
 end
