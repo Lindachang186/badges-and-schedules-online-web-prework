@@ -11,11 +11,11 @@ def batch_badge_creator(attendees)
   list
 end
 
-def conference_badges(attendees)
-  rooms = []
+def assign_rooms(attendees)
+  room_assignments = []
   i = 1
   attendees.each do |name|
-    rooms.push("Hello, #{name}! You'll be assigned to room #{i}!")
+    room_assignments.push("Hello, #{name}! You'll be assigned to room #{i}!")
     i +=1
   end
   print rooms
