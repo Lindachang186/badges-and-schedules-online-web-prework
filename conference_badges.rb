@@ -25,11 +25,11 @@ end
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees)
+batch_badge_creator(attendees)
 welcome = batch_badge_creator(attendees).size
 i = 0
 while i < welcome
-  welcome.each do |i|
+  batch_badge_creator(attendees).each do |i|
     puts welcome[i]
     i += 1
 end
