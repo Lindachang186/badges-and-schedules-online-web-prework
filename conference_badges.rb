@@ -17,7 +17,6 @@ def assign_rooms(attendees)
   n = 0
   if n < i
     i += 1
-  end 
   attendees.each do |name|
     puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{i}!")
   end
