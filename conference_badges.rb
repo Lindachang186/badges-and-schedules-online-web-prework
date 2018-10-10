@@ -26,7 +26,9 @@ end
 
 def printer(attendees)
 one = batch_badge_creator(attendees)
+i = 0
   one.each do |i|
     puts one[i]
+    i += 1 
 end
 end
