@@ -25,6 +25,6 @@ end
 end
 
 def printer(badges, room_assignments)
-  puts badges
-  puts room_assignments
+  return badges
+  return assign_rooms(attendees)
 end
