@@ -16,5 +16,6 @@ def conference_badges(attendees)
   i = 1
   attendees.each do |name|
     rooms.push("Hello, #{name}! You'll be assigned to room #{i}!)
-    i += 1 
+    i += 1
+  end
 end
