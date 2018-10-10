@@ -15,7 +15,7 @@ def assign_rooms(attendees)
   room_assignments = []
   i = attendees.size
   n = 1
-  until n <= i
+  while n <= i
   attendees.each do |name|
     puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
     n += 1
