@@ -13,13 +13,8 @@ end
 
 def assign_rooms(attendees)
   room_assignments = Array.new
-  i = attendees.size
-  n = 1
-  while n < i
-  attendees.each do |name|
-    room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
-    n += 1
-end
+  attendees.each_with_index do |name|
+    room_assignments.push("Hello, #{name}! You'll be assigned to room #{index + 1}!")
 return room_assignments
 end
 end
@@ -29,6 +24,6 @@ def printer(attendees)
     puts badge
   end
   assign_rooms(attendees).each do |assignment|
-    puts assignment[0]
+    puts assignment
   end
 end
