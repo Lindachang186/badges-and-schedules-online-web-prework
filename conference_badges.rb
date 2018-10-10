@@ -17,7 +17,7 @@ def assign_rooms(attendees)
   n = 1
   while n < i
   attendees.each do |name|
-    puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
+    room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
     n += 1
 end
 return room_assignments
