@@ -25,7 +25,8 @@ end
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees) do |item|
-    puts list.inspect
+one = batch_badge_creator(attendees)
+  one.each do |i|
+    puts one[i]
 end
 end
