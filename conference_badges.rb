@@ -22,6 +22,7 @@ def assign_rooms(attendees)
 end
 return room_assignments
 end
+end
 
 def printer(attendees)
   batch_badge_creator(attendees).inspect
