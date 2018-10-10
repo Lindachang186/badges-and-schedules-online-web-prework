@@ -24,7 +24,7 @@ def assign_rooms(attendees)
 end
 end
 
-def printer(badges, room_assignments)
+def printer(list, room_assignments)
   puts list.inspect
   puts room_assignments.inspect
 end
