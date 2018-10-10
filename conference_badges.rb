@@ -17,7 +17,7 @@ def assign_rooms(attendees)
   n = 1
   while n <= i
   attendees.each do |name|
-    puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
+    puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}")
     n += 1
 end
 return room_assignments
@@ -25,7 +25,11 @@ end
 end
 
 def printer(attendees)
- puts batch_badge_creator(attendees).inspect
-puts assign_rooms(attendees).inspect
-
+i = attendees.size
+n = 0
+while n <= i
+puts batch_badge_creator(attendees).inspect[i]
+puts assign_rooms(attendees).inspect[i]
+n += 1
+end
 end
