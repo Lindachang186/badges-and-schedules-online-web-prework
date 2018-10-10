@@ -18,4 +18,5 @@ def conference_badges(attendees)
     rooms.push("Hello, #{name}! You'll be assigned to room #{i}!")
     i +=1
   end
+  print rooms
 end
