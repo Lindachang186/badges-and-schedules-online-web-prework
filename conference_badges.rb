@@ -20,9 +20,8 @@ def assign_rooms(attendees)
     puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{n}!")
     n += 1
 end
-end
 return room_assignments
-
+end
 end
 
 def printer(attendees)
