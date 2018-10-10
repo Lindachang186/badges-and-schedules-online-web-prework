@@ -25,12 +25,12 @@ end
 end
 
 def printer(attendees)
-batch_badge_creator(attendees)
+list = batch_badge_creator(attendees)
 welcome = batch_badge_creator(attendees).size
 i = 0
 while i < welcome
-  batch_badge_creator(attendees).each do |i|
-    puts batch_badge_creator(attendees)[i]
+  list.each do |i|
+    puts list[i]
     i += 1
 end
 end
