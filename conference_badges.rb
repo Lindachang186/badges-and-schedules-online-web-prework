@@ -8,15 +8,18 @@ def batch_badge_creator(attendees)
   attendees.each do |name|
     list.push(badge_maker(name))
   end
-  list
+  return list
 end
 
 def assign_rooms(attendees)
   room_assignments = []
-  i = 1
+  i = attendees.size
+  n = 0
+  if n < i
+    i += 1
+  end 
   attendees.each do |name|
     puts room_assignments.push("Hello, #{name}! You'll be assigned to room #{i}!")
-    i +=1
   end
   return room_assignments
 end
