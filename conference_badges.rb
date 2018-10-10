@@ -28,7 +28,7 @@ def printer(attendees)
 welcome = batch_badge_creator(attendees).size
 i = 0
 while i < welcome
-  welcome.each do |attendees|
+  welcome.each do |i|
     puts welcome[i]
     i += 1
 end
