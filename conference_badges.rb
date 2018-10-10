@@ -25,11 +25,5 @@ end
 end
 
 def printer(attendees)
-i = attendees.size
-n = 0
-while n <= i
-puts batch_badge_creator(attendees).inspect[i]
-puts assign_rooms(attendees).inspect[i]
-n += 1
-end
+batch_badge_creator(attendees).inspect
 end
