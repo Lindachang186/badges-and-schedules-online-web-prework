@@ -25,6 +25,8 @@ end
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees).inspect
-assign_rooms(attendees).inspect
+  batch_badge_creator(attendees)
+  puts list.inspect
+assign_rooms(attendees)
+puts room_assignments.inspect
 end
